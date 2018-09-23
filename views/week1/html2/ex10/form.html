@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for="name" p>Name:</label>
+            <br>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email">
+            <br>
+            <br>
+            <label for="city">Your city:</label>
+            <br>
+            <input type="text" id="city">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questionnaire</legend>
+            <label for="checkboxes">How are you finding the course? Tick all applicable</label>
+            <br>
+            <input type="checkbox" id="cEnjoying">
+            <label for="cEnjoying">Enjoying it</label>
+            <input type="checkbox" id="cChallenging">
+            <label for="cChallenging">Challenging</label>
+            <input type="checkbox" id="cCatchingUp">
+            <label for="cCatchingUp">Still catching up</label>
+            <input type="checkbox" id="cTooHard">
+            <label for="cTooHard">Too hard</label>
+            <input type="checkbox" id="cTooMany">
+            <label for="cTooMany">Too many exercises</label>
+            <input type="checkbox" id="cNotEnough">
+            <label for="cNotEnough">Not enough exercises</label>
+            <input type="checkbox" id="cConfused">
+            <label for="cConfused">Confused</label>
+            <br>
+            <br>
+            <p>Choose the one that best describes your experience so far</p>
+            <input type="radio" id="radioLearning">
+            <label for="radioLearning">Learning a lot</label>
+            <input type="radio" id="radioNotLearning">
+            <label for="radioNotLearning">Not learning enough</label>
+            <input type="radio" id="radioOkay">
+            <label for="radioOkay">Okay</label>
+            <br>
+            <br>
+            <label for="sFavAnimal">Pick your favorite animal:</label>
+            <select name="favAnimal" id="sFavAnimal">
+                <option value="mandarin_duck">Mandarin duck</option>
+                <option value="quokka">Quokka</option>
+                <option value="wombat">Wombat</option>
+                <option value="lynx">lynx</option>
+                <option value="pika">Pika</option>
+                <option value="red_panda">Red Panda</option>
+            </select>
+            <br>
+            <br>
+            <textarea name="additional_comments_text_area" id="" cols="50" rows="10">Additional comments here</textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Done!">
+        <input type="reset" value="Clear!">
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <form action="https://sporadic.nz/web_lab_echo_service/" method="POST">
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for="name" p>Name:</label>
+            <br>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email" name="email">
+            <br>
+            <br>
+            <label for="city">Your city:</label>
+            <br>
+            <input type="text" id="city" name="city">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questionnaire</legend>
+            <p>How are you finding the course? Tick all applicable</p>
+            <br>
+            <input type="checkbox" id="cEnjoying" name="enjoying"><label for="cEnjoying">Enjoying it</label>
+            <input type="checkbox" id="cChallenging" name="challenging"><label for="cChallenging">Challenging</label>
+            <input type="checkbox" id="cCatchingUp" name="catch_up"><label for="cCatchingUp">Still catching up</label>
+            <input type="checkbox" id="cTooHard" name="too_hard"><label for="cTooHard">Too hard</label>
+            <input type="checkbox" id="cTooMany" name="too_many"><label for="cTooMany">Too many exercises</label>
+            <input type="checkbox" id="cNotEnough" name="not_enough"><label for="cNotEnough">Not enough exercises</label>
+            <input type="checkbox" id="cConfused" name="confused"><label for="cConfused">Confused</label>
+            <br>
+            <br>
+            <p>Choose the one that best describes your experience so far</p>
+            <input type="radio" id="radioLearning" name="learning"><label for="radioLearning">Learning a lot</label>
+            <input type="radio" id="radioNotLearning" name="not_learning"><label for="radioNotLearning">Not learning enough</label>
+            <input type="radio" id="radioOkay" name="okay"><label for="radioOkay">Okay</label>
+            <br>
+            <br>
+            <label for="sFavAnimal">Pick your favorite animal:</label>
+            <select name="favAnimal" id="sFavAnimal">
+                <option value="mandarin_duck">Mandarin duck</option>
+                <option value="quokka">Quokka</option>
+                <option value="wombat">Wombat</option>
+                <option value="lynx">lynx</option>
+                <option value="pika">Pika</option>
+                <option value="red_panda">Red Panda</option>
+            </select>
+            <br>
+            <br>
+            <textarea name="additional_comments_text_area" id="" cols="50" rows="10">Additional comments here</textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Done!">
+        <input type="reset" value="Clear!">
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+
+
+        {{!-- The main navbar --}}
+        <nav class="navbar navbar-expand-xl bg-dark navbar-dark fixed-top">
+
+            <a class="navbar-brand" href="/">_719</a>
+
+
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+
+                {{#each navbar_items}}
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        {{title}}
+                    </a>
+                    <div class="dropdown-menu">
+
+                        {{#each links}}
+
+                        <a class="dropdown-item" href="{{../title}}-{{this}}">{{this}}</a>
+
+                        {{/each}}
+
+                    </div>
+                </li>
+                {{/each}}
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        JS4
+                    </a>
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-item" href="animatedbook">animatedbook</a>
+
+                    </div>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container-fluid" style="margin-top:80px">
+            {{{body}}}
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
